@@ -51,6 +51,12 @@ ax[0].plot(t,x[:,[0]])
 ax[1].plot(t,x[:,[1]])
 ax[2].plot(t,u)
 
-plt.grid(True)
+for k in range(3):
+    ax[k].grid(True)
+
+ax[0].set_ylabel('x(1)')
+ax[1].set_ylabel('x(2)')
+ax[2].set_ylabel('u')
+ax[2].set_xlabel('t [sec]')
 plt.show()
 
